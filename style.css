@@ -1,0 +1,96 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: hsl(30, 38%, 92%);
+}
+.mobile{
+    display: none;
+}
+
+main{
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+main img{
+    width: 20em
+}
+
+
+.details{
+    padding: 2rem;
+    background: hsl(0, 0%, 100%);
+    max-width: 255px;
+}
+
+.details h1{
+    /* font-size: ; */
+    font-weight: 700;
+}
+.font2{
+    font-family: 'Fraunces', serif;
+}
+.price{
+    display:flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.price h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: hsl(158, 36%, 37%);
+}
+.price p{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+button{
+    width: 100%;
+    background: hsl(158, 35%, 20%);
+    padding: 0.7em;
+    border-radius: 5px;
+}
+
+button span{
+    color: hsl(0, 0%, 100%);
+    margin-left: 1em;
+}
+
+@media (max-width: 550px ) {
+    main{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        /* border: solid red; */
+        width: 70%
+    }
+
+    .mobile{
+        display: block;
+        width:100%
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .details{
+        padding-top: 0;
+        max-width: 100%;
+    }
+    .details
+}
